@@ -1,0 +1,94 @@
+DISPLAY----------------
+when ul contains li,write in li.
+display:inline //same as span element//doesnot starts in new line and takes wanted width //width,height,padding
+and margin for top and bottom won't work
+display:inline-block //doesnot starts in new line and takes wanted width //width,height,padding and 
+margin work in all four directions
+display:block //starts in new line and takes full width
+display:none //hides element without consuming space
+visibility:hidden //hides element with consuming space
+
+POSITION----------------
+position:static //
+Element with position: static; is not positioned in any special way; it is always positioned according to the 
+normal flow of the page.//No effect of top,bottom,left,right.
+
+Use one from top or bottom and one from left or right.No center property.
+
+position:relative //Won't allow any elements in gap
+An element with position: relative; is positioned relative to its normal position.
+position:fixed //No gap
+An element with position: fixed; is positioned relative to the viewport. fixed element does not leave a gap 
+in the page where it would normally have been located.
+position:absolute //No gap
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (parent)
+(instead of positioned relative to the viewport, like fixed).
+position:sticky //
+An element with position: sticky; is positioned based on the user's scroll position.
+A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+Z-Index-----------
+When elements are positioned, they can overlap other elements.
+The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).An element can have a positive or negative stack order.
+z-index://positive or negative values.
+
+OVERFLOW------------
+overflow:visible//By default, the overflow is visible, meaning that it is not clipped and it renders outside the element's box
+overflow:hidden//With the hidden value, the overflow is clipped, and the rest of the content is hidden
+overflow:scroll// the overflow is clipped and a scrollbar is added to scroll inside the box. Note that this will add a scrollbar both horizontally and vertically (even if you do not need it)
+overflow:auto//The auto value is similar to scroll, but it adds scrollbars only when necessary.
+overflow-x: hidden; /* Hide horizontal scrollbar */
+overflow-y: scroll; /* Add vertical scrollbar */
+
+FLOAT AND CLEAR-------------------
+float----
+If there is a div container with img and text,then with the help of float we can make img to float on left.
+float://left,right,none(default)
+clear----
+Making next element not to float 
+clear:left//element is pushed below left floated elements
+    right//element is pushed below right floated elements
+    both//element is pushed below left and right floated elements
+    none(default)
+
+OPACITY(TRANSPARENCY)------------
+opacity://0 to 1//same as alpha in colors
+
+COUNTERS(variables)---------------
+counter-reset:var_name//create or reset//write in parent when you want to write in child
+counter-increment:var_name//write in child
+content:counter(var_name)""//write in child::before and write anything in "" like . or : or anything
+
+
+UNITS------------
+Absolute units--
+Millimeters(mm) < Centimeters(cm) < Inches(in) > pc
+Pixels(px=1/96 of inch) < Points(pt=1/72 of inch) < Picas(pc=12pt) 
+Relative units--
+em,rem,vw and vh,%
+
+SPECIFICITY(Priority)------------
+Hierarchy----
+The specificity level of a selector:
+
+Inline styles
+IDs
+Classes, pseudo-classes, attribute selectors
+Elements and pseudo-elements
+
+Equal specificity: the latest rule wins - If the same rule is written twice into the external style sheet, then the latest rule wins
+The universal selector (*) and inherited values have a specificity of 0 
+
+Priority order is inline css > External css > Internal css
+
+
+NOT IMPORTANT------------
+!important 
+The !important rule in CSS is used to add more importance to a property/value than normal.
+In fact, if you use the !important rule, it will override ALL previous styling rules for that specific property on that element!
+Ex-
+p {
+  background-color: red !important;
+}
+The only way to override an !important rule is to include another !important rule on a declaration with the same (or higher) specificity in the source code.
+

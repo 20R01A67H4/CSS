@@ -1,0 +1,105 @@
+Colors---------
+RGB-
+rgb(red,green,blue) from rgb(0,0,0) to rgb(255,255,255) i.e from black to white
+rgba(0,0,0,0 to 1)//a-alpha
+HEX-
+#000000 to #ffffff i.e from black to white
+Assuming ff part= Intitially it is 00.counting 0-9 and a-f is equal to 1 i.e 10.count until left one becomes 
+from 10 to 20,30,...ff.
+HSL-(Heu,Saturation,Lightness) from (0,0%,0%) to (360,100%,100%)
+HSLA-(Heu,Saturation,Lightness,Alpha) from (0,0%,0%,0) to (360,100%,100%,1)
+
+
+BACKGROUND-----------
+background-color:color
+background-image:url('   '),url('    ');//Add multiple
+background-repeat:   //repeat-x,repeat-y,no-repeat
+background-position:  //left top,left center,left bottom,center top,center center,center bottom,right top,
+                        right center,right bottom
+background-size: cover; //Resize the background image to cover the entire container
+background-attachment://scroll-scroll with page,fixed,local-scroll with local element
+SHORTHAND=background:bg-color bg-img bg-repeat bg-attachment bg-position
+
+
+BORDER------------
+border-width:
+border-style:
+border-color:
+border-radius:
+SHORTHAND=border:width style color;//write radius separately
+
+
+MARGINS AND PADDING----------
+margin://top right bottom left //top-bottom left-right//top-right-bottom-left
+       //auto-horizontally centers(width of an element should be given,then remaining space will be divided equally)
+margin-top:,margin-bottom:,margin-left:,margin-right:....
+padding:...........
+
+
+HEIGHTS AND WIDTHS---------
+min-width:,max-width,min-height,max-height
+
+
+OUTLINE--------------
+A line drawn on border of element.
+outline-width://thin,medium,thick, .....
+outline-style:
+outline-color:
+SHORTHAND=outline: width style color
+outline-offset://Adds space between border and outline.
+
+
+TEXT------------------
+color:
+text-align://left,center,right,justify
+
+text-decoration-line://overline,line-through,underline,overline underline
+text-decoration-style://
+text-decoration-color://
+text-decoration-thickness://
+SHORTHAND=text-decoration:line style color thickness;
+
+text-transform://uppercase,lowercase,capitalize
+
+text-indent:
+line-height:
+letter-spacing:
+word-spacing:
+
+text-shadow://(horizontal shadow,vertical shadow,blur effect,color)
+
+
+FONT-------------
+1.If the font name is more than one word, it must be in quotation marks, like: "Times New Roman".
+2.Start with the font you want, and end with a generic family (to let the browser pick a similar font in the 
+generic family, if no other fonts are available)
+
+font-family://"Times New Roman", Times, serif
+font-style://normal,italic,oblique
+font-weight://normal,lighter,bold
+font-variant://normal,small-caps
+font-size://
+SHORTHAND=font: style size weight variant family;
+
+
+ICONS in CSS-----------
+Add cdn to head and use write classes in i or span elements.
+For cloud icon--
+Font Awesome Icons--
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+<i class="fas fa-cloud"></i>
+
+Bootstrap icons--
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<i class="glyphicon glyphicon-cloud"></i>
+
+Google icons--
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<i class="material-icons"> cloud </i>
+
+
+LIST-----------------
+list-style-type://none(default),circle,square,lower-roman,lower-alpha,upper-roman,upper-alpha,numeric
+list-style-image:url('   ')
+list-style-position:inside//text will start below marker in next line,outside//text will below text in next line.
+SHORTHAND:list-type:type image position;

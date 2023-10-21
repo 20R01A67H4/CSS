@@ -1,0 +1,60 @@
+Css selectors------------
+
+1.Simple selectors-
+.class
+#id
+p element
+* Universal
+
+2.Grouping Css-
+div,p,span
+
+3.Attribute selectors-
+Element[Attribute="value"]
+Element[Attribute^="value"]//starts with
+Element[Attribute$="value"]//ends with
+Element[Attribute*="value"]//multiple characters before
+
+4.Css Combinators-
+div p//all p inside div
+div>p//children(p) of div
+div+p//immediate sibling(p) of div
+div~p//general siblings after of div
+
+5.Pseudo class selectors---
+Link classes-
+a:link//never visited before//a normal, unvisited link
+a:visited//Already visited in current browser// a link the user has visited
+a:hover
+a:focus//when user tabbed on element like button get focus on first time but not same on link
+a:active//when clicked on any element we get glance//a link the moment it is clicked
+
+When setting the style for several link states, there are some order rules:
+
+a:hover MUST come after a:link and a:visited
+a:active MUST come after a:hover
+
+Input classes-
+.class:focus//when clicked we get long focus.
+.class:required//when required keyword is there it applies
+.class:checked//when checkbox is checked it applies
+.class:disabled//when disabled keyword is there it is applied
+
+Position classes--
+p:first-child//p is first child in parent container//Must at top of all children
+q:last-child//q is last child in parent container//Must at bottom of all children
+p:nth-child()//
+The difference between :first-child and :first-of-type is that :first-of-type will match the first element 
+of its element type, which in HTML is represented by its tag name, even if that element is not the first 
+child of the parent. 
+p:first-of-type//p is first of type itself in group of siblings may same or different
+p:last-of-type//p is last of type itself in group of siblings may same or different
+
+6.Pseudo element selectors---
+.class::before//used to place content before element
+.class::after//used to place content after element
+.class::selection//when selects text get applied
+  ::selection//for whole text
+.class::first-letter//for first letter of text
+.class::first-line//for first line of text
+::marker//for list items in front of them
